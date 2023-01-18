@@ -46,3 +46,13 @@ button {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+:root {
+    --phone: 414px;
+    --tablet: 1024px;
+    --desktop: 1280px;
+    --times-font: 'TimesNewRoman', 'sans-serif';
+    --montserrat-font: 'Montserrat', 'sans-serif';
+    --film-font: 'FilmP3', 'sans-serif';
+    --accent-color: #f3c653;
+}
