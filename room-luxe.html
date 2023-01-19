@@ -1,30 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Двомісний номер люкс</title>
         <!-- Подключение шрифтов -->
-        <!-- Подключение фавиконки -->
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+        />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="css/main.min.css" />
     </head>
     <body>
         <!-- Header -->
-        <header></header>
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__nav">
+                    <a href="./index.html" class="logo header__logo">Mimiho</a>
+                    <ul class="header__contacts contacts-list list">
+                        <li class="contacts-list__item">
+                            <a href="./restaurant.html" class="contacts-list__title link"
+                                >Ресторан</a
+                            >
+                            <a
+                                href="tel:0955559533"
+                                class="contacts-list__tel link"
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                            >
+                                <svg class="contacts-list__icon">
+                                    <use href="./images/icon.svg#icon-phone"></use>
+                                </svg>
+                                <span class="contacts-list__phone-number">095 555 95 33</span>
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="./hotel.html" class="contacts-list__title link">Готель</a>
+                            <a
+                                href="tel:0668491089"
+                                class="contacts-list__tel link"
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                            >
+                                <svg class="contacts-list__icon">
+                                    <use href="./images/icon.svg#icon-phone"></use>
+                                </svg>
+                                <span class="contacts-list__phone-number">066 849 10 89</span>
+                            </a>
+                        </li>
+                        <!-- <li class="contacts-list__item">
+                            <a href="./hotel.html" class="contacts-list__title link">Готель</a>
+                            <div class="contacts-list__tel contacts-list__tel-long">
+                                <a
+                                    href="tel:0668491089"
+                                    class="tel-long__link link"
+                                    target="_blank"
+                                    rel="nofollow noopener noreferrer"
+                                >
+                                    <svg class="contacts-list__icon">
+                                        <use href="./images/icon.svg#icon-phone"></use>
+                                    </svg>
+                                    <span class="contacts-list__phone-number">066 849 10 89</span>
+                                </a>
+                                <a
+                                    href="tel:0672758540"
+                                    class="tel-long__link link"
+                                    target="_blank"
+                                    rel="nofollow noopener noreferrer"
+                                >
+                                    <span class="contacts-list__phone-number">067 275 85 40</span>
+                                </a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </nav>
+                <ul class="header-soc-list list">
+                    <li class="header-soc-list__item">
+                        <a
+                            href="#"
+                            class="header-soc-list__link link"
+                            target="_blank"
+                            rel="nofollow noopener noreferrer"
+                        >
+                            <svg class="header-soc-list__icon">
+                                <use href="./images/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-soc-list__item">
+                        <a
+                            href="#"
+                            class="header-soc-list__link link"
+                            target="_blank"
+                            rel="nofollow noopener noreferrer"
+                        >
+                            <svg class="header-soc-list__icon">
+                                <use href="./images/icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-soc-list__item">
+                        <a
+                            href="#"
+                            class="header-soc-list__link link"
+                            target="_blank"
+                            rel="nofollow noopener noreferrer"
+                        >
+                            <svg class="header-soc-list__icon">
+                                <use href="./images/icon.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <main>
             <!-- Hero -->
-            <section>
-                <h1>двомісний номер люкс</h1>
-                <h2>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
-                    nostrud amet.
-                </h2>
+            <section class="container-room">
+                <div class="room__gradient"></div>
+                <div class="rooms hero-slider">
+                    <div>
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-1-dt.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-1-dt_2x.webp 2x
+                                "
+                                media="(min-width: 1280px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-1-tab.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-1-tab_2x.webp 2x
+                                "
+                                media="(min-width: 1024px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-1-mob.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-1-mob_2x.webp 2x
+                                "
+                                media="(min-width: 414px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-1-dt.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-1-dt_2x.jpg 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-1-tab.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-1-tab_2x.jpg 2x
+                                "
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-1-mob.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-1-mob_2x.jpg 2x
+                                "
+                                media="(min-width: 414px)"
+                            />
+                            <img
+                                src="./images/room-pages/bg/bg-rooms-1-dt.jpg"
+                                alt="фото рецепцї"
+                                class="img"
+                            />
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-2-dt.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-2-dt_2x.webp 2x
+                                "
+                                media="(min-width: 1280px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-2-tab.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-2-tab_2x.webp 2x
+                                "
+                                media="(min-width: 1024px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-2-mob.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-2-mob_2x.webp 2x
+                                "
+                                media="(min-width: 414px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-2-dt.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-2-dt_2x.jpg 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-2-tab.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-2-tab_2x.jpg 2x
+                                "
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-2-mob.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-2-mob_2x.jpg 2x
+                                "
+                                media="(min-width: 414px)"
+                            />
+                            <img
+                                src="./images/room-pages/bg/bg-rooms-2-dt.jpg"
+                                alt="фото готельного номера"
+                                class="img"
+                            />
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-3-dt.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-3-dt_2x.webp 2x
+                                "
+                                media="(min-width: 1280px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-3-tab.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-3-tab_2x.webp 2x
+                                "
+                                media="(min-width: 1024px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-3-mob.webp    1x,
+                                    ./images/room-pages/bg/bg-rooms-3-mob_2x.webp 2x
+                                "
+                                media="(min-width: 414px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-3-dt.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-3-dt_2x.jpg 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-3-tab.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-3-tab_2x.jpg 2x
+                                "
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/room-pages/bg/bg-rooms-3-mob.jpg    1x,
+                                    ./images/room-pages/bg/bg-rooms-3-mob_2x.jpg 2x
+                                "
+                                media="(min-width: 414px)"
+                            />
+                            <img
+                                src="./images/room-pages/bg/bg-rooms-3-dt.jpg"
+                                alt="фото ванної кімнати"
+                                class="img"
+                            />
+                        </picture>
+                    </div>
+                </div>
+                <div class="room__info">
+                    <h1 class="room__title">
+                        <span class="room__subtitle">Двомісний номер </span>люкс
+                    </h1>
+                    <p class="room__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam
+                        consequat sunt nostrud amet.
+                    </p>
+                    <div class="room__contact">
+                        <address class="room__address">
+                            <a
+                                class="room__address-link link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                ><svg class="room__address-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-point"></use></svg
+                                >Україна, м. Полтава,
+                                <br />
+                                вул. Маршала Бірюзова, 15</a
+                            >
+                        </address>
+                        <ul class="room__soc-list list">
+                            <li class="room__soc-item">
+                                <a href="" class="room__soc-link">
+                                    <svg class="room__soc-icon" width="24" height="24">
+                                        <use href="./images/icon.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="room__soc-item">
+                                <a href="" class="room__soc-link">
+                                    <svg class="room__soc-icon" width="24" height="24">
+                                        <use href="./images/icon.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="room__soc-item">
+                                <a href="" class="room__soc-link">
+                                    <svg class="room__soc-icon" width="24" height="24">
+                                        <use href="./images/icon.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn room__btn" data-modal-open-price-lux>Переглянути ціни</button>
             </section>
-            <!-- Amenities -->
+            <!-- About our restaurant -->
+            <section></section>
+            <!-- Details of our restaurant -->
+            <section></section>
+            <!-- About our hotel -->
+            <section></section>
+            <!-- Details of our hotel -->
+            <section></section>
+            <!-- Contacts -->
             <section></section>
         </main>
         <!-- Footer -->
         <footer></footer>
+
+       <!-- Підключення бібліотек -->
+        <!-- slick jquery -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- slick js -->
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- base js -->
+        <script type="modul" src="./js/slick.js"></script>
+        <script src="./js/modal-room.js" type="module"></script>
+        <script src="./js/modal-price-lux.js" type="module"></script>
     </body>
 </html>
