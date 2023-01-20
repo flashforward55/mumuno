@@ -20,7 +20,7 @@
 }
 
 .hero-slider .slick-prev:before {
-    background-image: url(images/arrow-left.svg);
+    background-image: url('../images/arrow-left.svg');
     background-position: center;
 
     @media screen and (min-width: 414px) {
@@ -55,7 +55,7 @@
 }
 
 .hero-slider .slick-next:before {
-    background-image: url(images/arrow-right.svg);
+    background-image: url('../images/arrow-right.svg');
     background-position: center;
 
     @media screen and (min-width: 414px) {

@@ -30,20 +30,20 @@
   font-weight: 300;
 }
 @font-face {
-  font-family: "FilmP3";
-  src: local("FilmP3"), url("../fonts/film-p3-bold.woff2") format("woff2"), url("../fonts/film-p3-bold.woff") format("woff"), url("../fonts/film-p3-bold.ttf") format("truetype");
+  font-family: "Film P3";
+  src: local("Film P3"), url("../fonts/film-p3-bold.woff2") format("woff2"), url("../fonts/film-p3-bold.woff") format("woff"), url("../fonts/film-p3-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "TimesNewRoman";
-  src: local("TimesNewRoman"), url("../fonts/times-new-roman-bold.woff2") format("woff2"), url("../fonts/times-new-roman-bold.woff") format("woff"), url("../fonts/times-new-roman-bold.ttf") format("truetype");
+  font-family: "Times New Roman";
+  src: local("Times New Roman"), url("../fonts/times-new-roman-bold.woff2") format("woff2"), url("../fonts/times-new-roman-bold.woff") format("woff"), url("../fonts/times-new-roman-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: "TimesNewRoman";
-  src: local("TimesNewRoman"), url("../fonts/times-new-roman-regular.woff2") format("woff2"), url("../fonts/times-new-roman-regular.woff") format("woff"), url("../fonts/times-new-roman-regular.ttf") format("truetype");
+  font-family: "Times New Roman";
+  src: local("Times New Roman"), url("../fonts/times-new-roman-regular.woff2") format("woff2"), url("../fonts/times-new-roman-regular.woff") format("woff"), url("../fonts/times-new-roman-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -97,7 +97,7 @@ button {
 }
 
 .logo {
-  font-family: "FilmP3", "sans-serif";
+  font-family: "Film P3", "sans-serif";
   text-transform: uppercase;
   font-size: 40px;
   line-height: 1.08;
@@ -272,7 +272,7 @@ button {
 }
 
 .hero-slider .slick-prev:before {
-  background-image: url(images/arrow-left.svg);
+  background-image: url("../images/arrow-left.svg");
   background-position: center;
 }
 @media screen and (min-width: 414px) {
@@ -308,7 +308,7 @@ button {
 }
 
 .hero-slider .slick-next:before {
-  background-image: url(images/arrow-right.svg);
+  background-image: url("../images/arrow-right.svg");
   background-position: center;
 }
 @media screen and (min-width: 414px) {
@@ -608,7 +608,7 @@ button {
 }
 
 .hotel-rooms__title {
-  font-family: "TimesNewRoman", "sans-serif";
+  font-family: "Times New Roman", "sans-serif";
   font-size: 24px;
   line-height: 1.17;
   font-weight: 700;
@@ -1206,7 +1206,7 @@ button {
   width: 303px;
   margin: 0 auto;
   margin-bottom: 24px;
-  font-family: "FilmP3", "sans-serif";
+  font-family: "Film P3", "sans-serif";
   font-size: 96px;
   line-height: 1.07;
   font-weight: 700;
@@ -1302,7 +1302,7 @@ button {
 .hero__text {
   margin: 0 auto;
   margin-bottom: 113px;
-  font-family: "TimesNewRoman", "sans-serif";
+  font-family: "Times New Roman", "sans-serif";
   font-size: 32px;
   line-height: 1.16;
   font-weight: 700;
@@ -1512,7 +1512,7 @@ button {
 }
 
 .hotel-rooms__title {
-  font-family: "TimesNewRoman", "sans-serif";
+  font-family: "Times New Roman", "sans-serif";
   font-size: 24px;
   line-height: 1.17;
   font-weight: 700;
