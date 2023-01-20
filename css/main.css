@@ -89,7 +89,7 @@ button {
   text-decoration: none;
 }
 
-.hero__soc-icon, .header-soc-list__icon, .big-btn, .link-light-btn, .link-btn, .dark-btn, .btn {
+.hero__soc-icon, .big-btn, .link-light-btn, .link-btn, .dark-btn, .btn {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -843,7 +843,6 @@ button {
   padding-top: 24px;
   padding-bottom: 12px;
 }
-
 .header__container {
   width: 100%;
   margin: 0 auto;
@@ -863,7 +862,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header__logo {
   text-decoration: none;
   color: #ffffff;
@@ -883,17 +881,16 @@ button {
 @media screen and (min-width: 1024px) {
   .header__logo {
     font-size: 40px;
-    line-height: 1.075;
+    line-height: 1.08;
     font-weight: 700;
     letter-spacing: 0.3em;
   }
 }
 @media screen and (min-width: 1280px) {
   .header__logo {
-    margin-right: 96px;
+    margin-right: 135px;
   }
 }
-
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -906,7 +903,7 @@ button {
 }
 @media screen and (min-width: 414px) {
   .header__contacts {
-    gap: 26px;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -931,7 +928,7 @@ button {
 }
 @media screen and (min-width: 414px) {
   .contacts-list__item {
-    gap: 12px;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -945,7 +942,7 @@ button {
   font-style: normal;
   color: #f3c653;
   font-size: 14px;
-  line-height: 1.2857142857;
+  line-height: 1.29;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -984,32 +981,9 @@ button {
     border-radius: 2px;
     width: 148px;
     gap: 14px;
-    padding: 9px 7px 9px 13px;
+    padding: 8px 8px 8px 12px;
   }
 }
-
-.contacts-list__tel-long {
-  width: 12px;
-}
-@media screen and (min-width: 1024px) {
-  .contacts-list__tel-long {
-    width: 264px;
-  }
-}
-
-.tel-long__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 14px;
-}
-
 .contacts-list__icon {
   width: 10px;
   height: 16px;
@@ -1021,45 +995,43 @@ button {
     height: 20px;
   }
 }
-
 .contacts-list__phone-number {
   display: none;
   font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-size: 14px;
-  line-height: 1.2142857143;
+  line-height: 1.21;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 @media screen and (min-width: 1024px) {
   .contacts-list__phone-number {
-    display: inline;
+    display: inline-block;
   }
 }
 
 .header-soc-list {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-  margin-left: auto;
 }
 @media screen and (min-width: 1280px) {
   .header-soc-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    margin-left: auto;
   }
 }
-
 .header-soc-list__icon {
   width: 22px;
   height: 22px;
   fill: rgba(243, 198, 83, 0.7);
-  -webkit-transform: fill;
-          transform: fill;
+  -webkit-transition: #f3c653 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: #f3c653 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-soc-list__icon:hover, .header-soc-list__icon:focus {
   fill: #f3c653;
