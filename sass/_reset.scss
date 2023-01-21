@@ -1,6 +1,6 @@
 body {
-    font-family: $montserrat-font;
-    background-color: $background-main-light;
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: #fffdee;
 }
 
 /* глобальный сброс margin, padding */
@@ -19,6 +19,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+a {
+    display: inline-block;
 }
 
 address {
