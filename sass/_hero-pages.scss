@@ -112,6 +112,153 @@
         @media screen and (min-width: 1280px) {
             margin-bottom: 64px;
         }
+
+        &-restaurant {
+            margin-bottom: 44px;
+
+            // @include tablet {
+            //     margin-bottom: 56px;
+            // }
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 56px;
+            }
+
+            // @include desktop {
+            //     margin-bottom: 64px;
+            // }
+            @media screen and (min-width: 1280px) {
+                margin-bottom: 64px;
+            }
+        }
+
+        &-hotel {
+            margin-bottom: 178px;
+
+            // @include tablet {
+            //     margin-bottom: 226px;
+            // }
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 226px;
+            }
+
+            // @include desktop {
+            //     margin-bottom: 249px;
+            // }
+            @media screen and (min-width: 1280px) {
+                margin-bottom: 249px;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0 auto;
+        margin-bottom: 113px;
+
+        font-family: 'Times New Roman',
+            'sans-serif';
+        // @include font(32px, 1.16, 700, 0.05em);
+        font-size: 32px;
+        line-height: 1.16;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        // @include tablet {
+        //     margin-bottom: 145px;
+        //     @include font(36px, 1.14, null, null);
+        // }
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 145px;
+            font-size: 32px;
+            line-height: 1.14;
+        }
+    }
+
+
+    &__button {
+        @media screen and (max-width: 1023px) {
+            margin: 0 auto;
+        }
+
+        &-mobile-margin {
+            @media screen and (max-width: 1023px) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &-wrap {
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                justify-content: flex-end;
+                gap: 40px;
+            }
+        }
+
+    }
+
+    // @include tablet {
+    //     .hero__button-wrap {
+    //         display: flex;
+    //         justify-content: flex-end;
+    //         gap: 40px;
+    //     }
+    // }
+    &__address {
+        position: absolute;
+        bottom: 527px;
+        right: 15px;
+
+        display: flex;
+        align-items: center;
+
+        width: 210px;
+        height: 47px;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+
+        // @include tablet {
+        //     top: 412px;
+        //     left: 47px;
+
+        //     width: 285px;
+        //     height: 56px;
+        // }
+        @media screen and (min-width: 1024px) {
+            top: 412px;
+            left: 47px;
+
+            width: 285px;
+            height: 56px;
+        }
+
+        // @include desktop {
+        //     top: 436px;
+        //     left: 85px;
+        // }
+        @media screen and (min-width: 1280px) {
+            top: 436px;
+            left: 85px;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            text-align: start;
+            font-family: 'Montserrat', 'sans-serif';
+            // @include font(12px, 1.25, null, 0.01em);
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.01em;
+            color: #e5e5e5;
+
+            // @include tablet {
+            //     font-size: 16px;
+            // }
+            @media screen and (min-width: 1024px) {
+                font-size: 16px;
+            }
+        }
     }
 }
 
@@ -527,89 +674,89 @@
 //     }
 // }
 
-.hero__subtitle-restaurant {
-    margin-bottom: 44px;
+// .hero__subtitle-restaurant {
+//     margin-bottom: 44px;
 
-    @include tablet {
-        margin-bottom: 56px;
-    }
+//     @include tablet {
+//         margin-bottom: 56px;
+//     }
 
-    @include desktop {
-        margin-bottom: 64px;
-    }
-}
+//     @include desktop {
+//         margin-bottom: 64px;
+//     }
+// }
 
-.hero__subtitle-hotel {
-    margin-bottom: 178px;
+// .hero__subtitle-hotel {
+//     margin-bottom: 178px;
 
-    @include tablet {
-        margin-bottom: 226px;
-    }
+//     @include tablet {
+//         margin-bottom: 226px;
+//     }
 
-    @include desktop {
-        margin-bottom: 249px;
-    }
-}
+//     @include desktop {
+//         margin-bottom: 249px;
+//     }
+// }
 
-.hero__text {
-    margin: 0 auto;
-    margin-bottom: 113px;
+// .hero__text {
+//     margin: 0 auto;
+//     margin-bottom: 113px;
 
-    font-family: $times-font;
-    @include font(32px, 1.16, 700, 0.05em);
-    color: $color-title-light;
-    text-transform: uppercase;
+//     font-family: $times-font;
+//     @include font(32px, 1.16, 700, 0.05em);
+//     color: $color-title-light;
+//     text-transform: uppercase;
 
-    @include tablet {
-        margin-bottom: 145px;
-        @include font(36px, 1.14, null, null);
-    }
-}
+//     @include tablet {
+//         margin-bottom: 145px;
+//         @include font(36px, 1.14, null, null);
+//     }
+// }
 
-@media screen and (max-width: 1023px) {
-    .hero__button {
-        margin: 0 auto;
-    }
+// @media screen and (max-width: 1023px) {
+//     .hero__button {
+//         margin: 0 auto;
+//     }
 
-    .hero__button-mobile-margin {
-        margin-bottom: 24px;
-    }
-}
+//     .hero__button-mobile-margin {
+//         margin-bottom: 24px;
+//     }
+// }
 
-@include tablet {
-    .hero__button-wrap {
-        display: flex;
-        justify-content: flex-end;
-        gap: 40px;
-    }
-}
+// @include tablet {
+//     .hero__button-wrap {
+//         display: flex;
+//         justify-content: flex-end;
+//         gap: 40px;
+//     }
+// }
 
-.hero__address {
-    position: absolute;
-    bottom: 527px;
-    right: 15px;
+// .hero__address {
+//     position: absolute;
+//     bottom: 527px;
+//     right: 15px;
 
-    display: flex;
-    align-items: center;
+//     display: flex;
+//     align-items: center;
 
-    width: 210px;
-    height: 47px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
+//     width: 210px;
+//     height: 47px;
+//     border: 1px solid rgba(243, 198, 83, 0.7);
+//     border-radius: 2px;
 
-    @include tablet {
-        top: 412px;
-        left: 47px;
+//     @include tablet {
+//         top: 412px;
+//         left: 47px;
 
-        width: 285px;
-        height: 56px;
-    }
+//         width: 285px;
+//         height: 56px;
+//     }
 
-    @include desktop {
-        top: 436px;
-        left: 85px;
-    }
-}
+//     @include desktop {
+//         top: 436px;
+//         left: 85px;
+//     }
+// }
 
 .hero__address-link {
     display: flex;
