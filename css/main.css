@@ -93,7 +93,7 @@ button {
   text-decoration: none;
 }
 
-.hero__soc-icon, .big-btn, .link-light-btn, .link-btn, .dark-btn, .btn {
+.big-btn, .link-light-btn, .link-btn, .dark-btn, .btn {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -182,7 +182,6 @@ button {
 }
 
 .link-light-btn {
-  display: block;
   padding: 12px 30px;
   font-style: normal;
   font-size: 16px;
@@ -898,7 +897,7 @@ button {
 }
 @media screen and (min-width: 414px) {
   .header__contacts {
-    gap: 20px;
+    gap: 26px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -923,7 +922,7 @@ button {
 }
 @media screen and (min-width: 414px) {
   .contacts-list__item {
-    gap: 20px;
+    gap: 12px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -957,7 +956,7 @@ button {
   }
 }
 .contacts-list__tel {
-  padding: 9px 0px 9px 0px;
+  padding: 9px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,8 +1047,8 @@ button {
   position: relative;
 }
 .hero__title {
-  margin: 0 auto;
-  margin-bottom: 24px;
+  width: 303px;
+  margin: 0 auto 24px;
   font-family: "Film P3", "sans-serif";
   font-size: 92px;
   line-height: 1.07;
@@ -1057,6 +1056,11 @@ button {
   letter-spacing: 0.3em;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media screen and (min-width: 414px) {
+  .hero__title {
+    font-size: 96px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .hero__title {
@@ -1151,7 +1155,7 @@ button {
 @media screen and (min-width: 1024px) {
   .hero__text {
     margin-bottom: 145px;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.14;
   }
 }
@@ -1223,6 +1227,78 @@ button {
   .hero__address-link {
     font-size: 16px;
   }
+}
+.hero__address-icon-mobile {
+  margin-left: 6px;
+  margin-right: 10px;
+  fill: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .hero__address-icon-mobile {
+    display: none;
+  }
+}
+.hero__address-icon-tablet {
+  margin-left: 6px;
+  margin-right: 10px;
+  fill: #f3c653;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .hero__address-icon-tablet {
+    display: none;
+  }
+}
+.hero__address-icon-tablet {
+  margin-left: 6px;
+  margin-right: 10px;
+  fill: #f3c653;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .hero__address-icon-tablet {
+    display: none;
+  }
+}
+.hero__soc-wrap {
+  position: absolute;
+  top: 515px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__soc-wrap {
+    top: 493px;
+    left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__soc-wrap {
+    display: none;
+  }
+}
+.hero__soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  width: 112px;
+  height: 24px;
+}
+.hero__soc-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  -webkit-transform: fill;
+          transform: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill, -webkit-transition-duration, -webkit-transition-timing-function;
+  transition: fill, -webkit-transition-duration, -webkit-transition-timing-function;
+  transition: fill, transition-duration, transition-timing-function;
+  transition: fill, transition-duration, transition-timing-function, -webkit-transition-duration, -webkit-transition-timing-function;
+}
+.hero__soc-icon:hover, .hero__soc-icon:focus {
+  fill: #f3c653;
 }
 
 .overlay {
@@ -1341,85 +1417,6 @@ button {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../images/hotel-page/bg/hotel-hero-desktop-@2x.jpg");
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/hotel-page/bg/hotel-hero-desktop-@2x.jpg");
   }
-}
-
-.hero__address-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: start;
-  font-family: "Montserrat", "sans-serif";
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: #e5e5e5;
-}
-@media screen and (min-width: 1024px) {
-  .hero__address-link {
-    font-size: 16px;
-  }
-}
-
-.hero__address-icon-mobile {
-  margin-left: 6px;
-  margin-right: 10px;
-  fill: #f3c653;
-}
-@media screen and (min-width: 1024px) {
-  .hero__address-icon-mobile {
-    display: none;
-  }
-}
-
-.hero__address-icon-tablet {
-  margin-left: 6px;
-  margin-right: 10px;
-  fill: #f3c653;
-}
-@media screen and (min-width: 320px) and (max-width: 1023px) {
-  .hero__address-icon-tablet {
-    display: none;
-  }
-}
-
-.hero__soc-wrap {
-  position: absolute;
-  top: 515px;
-}
-@media screen and (min-width: 1024px) {
-  .hero__soc-wrap {
-    top: 493px;
-    left: 47px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero__soc-wrap {
-    display: none;
-  }
-}
-
-.hero__soc-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 20px;
-  width: 112px;
-  height: 24px;
-}
-
-.hero__soc-icon {
-  fill: rgba(243, 198, 83, 0.7);
-  -webkit-transform: fill;
-          transform: fill;
-}
-.hero__soc-icon:hover, .hero__soc-icon:focus {
-  fill: #f3c653;
 }
 
 .hotel-rooms__container {
