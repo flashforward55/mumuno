@@ -8,7 +8,6 @@
     padding-top: 24px;
     padding-bottom: 12px;
 
-
     &__container {
         width: 100%;
         margin: 0 auto;
@@ -137,18 +136,13 @@
     &__phone-number {
         display: none;
 
-        // @include tablet {
-        //     display: inline;
-        // }
         @media screen and (min-width: 1024px) {
             display: inline-block;
         }
 
-        // Типографіка
         font-family: 'Montserrat',
         'sans-serif';
         font-style: normal;
-        // @include font(14px, calc(17/14), 400, 0.02em);
         font-size: 14px;
         line-height: 1.21;
         font-weight: 400;
@@ -160,9 +154,6 @@
 .header-soc-list {
     display: none;
 
-    // @include desktop {
-    //     display: flex;
-    // }
     @media screen and (min-width: 1280px) {
         display: flex;
         align-items: center;
@@ -170,20 +161,15 @@
         margin-left: auto;
     }
 
-
     &__icon {
-        // Позиціюнування
         width: 22px;
         height: 22px;
-        // Оформлення
         fill: rgba(243, 198, 83, 0.7);
-        // transform: fill;
-        // @extend %transition;
-        // transition-duration: 250ms;
-        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition: #f3c653 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform transition-duration transition-timing-function;
 
-        // Анімація
         &:hover,
         &:focus {
             fill: #f3c653;

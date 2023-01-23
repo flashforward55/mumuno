@@ -957,8 +957,16 @@ button {
   width: 22px;
   height: 22px;
   fill: rgba(243, 198, 83, 0.7);
-  -webkit-transition: #f3c653 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: #f3c653 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: fill;
+          transform: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform transition-duration transition-timing-function;
+  transition: -webkit-transform transition-duration transition-timing-function;
+  transition: transform transition-duration transition-timing-function;
+  transition: transform transition-duration transition-timing-function, -webkit-transform transition-duration transition-timing-function;
 }
 .header-soc-list__icon:hover, .header-soc-list__icon:focus {
   fill: #f3c653;
