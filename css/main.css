@@ -1252,6 +1252,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 414px;
 }
 .overlay__main {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../images/main-page/bg/main-hero-mobile-@1x.jpg");

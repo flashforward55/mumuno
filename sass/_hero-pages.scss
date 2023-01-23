@@ -2,16 +2,10 @@
     padding: 181px 0 102px 0;
     text-align: center;
 
-    // @include tablet {
-    //     padding: 188px 0 64px 0;
-    // }
     @media screen and (min-width: 1024px) {
         padding: 188px 0 64px 0;
     }
 
-    // @include desktop {
-    //     padding: 164px 0 65px 0;
-    // }
     @media screen and (min-width: 1280px) {
         padding: 164px 0 65px 0;
     }
@@ -24,10 +18,7 @@
         width: 303px;
         margin: 0 auto 24px;
 
-
         font-family: 'Film P3', 'sans-serif';
-        // @include font(96px, 1.07, 700, 0.3em);
-
         font-size: 92px;
         line-height: 1.07;
         font-weight: 700;
@@ -39,12 +30,6 @@
             font-size: 96px;
         }
 
-        // @include tablet {
-        //     width: 404px;
-        //     margin-bottom: 16px;
-        //     font-size: 128px;
-        //     line-height: 1.08;
-        // }
         @media screen and (min-width: 1024px) {
             width: 404px;
             margin-bottom: 16px;
@@ -52,9 +37,6 @@
             line-height: 1.08;
         }
 
-        // @include desktop {
-        //     margin-bottom: 32px;
-        // }
         @media screen and (min-width: 1280px) {
             margin-bottom: 32px;
         }
@@ -62,16 +44,10 @@
         &-restaurant {
             margin-bottom: 20px;
 
-            //     @include tablet {
-            //         margin-bottom: 16px;
-            //     }
             @media screen and (min-width: 1024px) {
                 margin-bottom: 16px;
             }
 
-            //     @include desktop {
-            //         margin-bottom: 32px;
-            //     }
             @media screen and (min-width: 1280px) {
                 margin-bottom: 32px;
             }
@@ -90,20 +66,11 @@
 
         font-family: 'Montserrat',
             'sans-serif';
-        // @include font(16px, 1.25, 600, 0.02em);
         font-size: 16px;
         line-height: 1.25;
         font-weight: 600;
         letter-spacing: 0.02em;
         color: #ffffff;
-
-
-
-        // @include tablet {
-        //     width: 368px;
-        //     margin-bottom: 56px;
-        //     @include font(20px, 1.2, null, null);
-        // }
 
         @media screen and (min-width: 1024px) {
             width: 368px;
@@ -112,9 +79,6 @@
             line-height: 1.2;
         }
 
-        // @include desktop {
-        //     margin-bottom: 64px;
-        // }
         @media screen and (min-width: 1280px) {
             margin-bottom: 64px;
         }
@@ -122,16 +86,10 @@
         &-restaurant {
             margin-bottom: 44px;
 
-            // @include tablet {
-            //     margin-bottom: 56px;
-            // }
             @media screen and (min-width: 1024px) {
                 margin-bottom: 56px;
             }
 
-            // @include desktop {
-            //     margin-bottom: 64px;
-            // }
             @media screen and (min-width: 1280px) {
                 margin-bottom: 64px;
             }
@@ -140,16 +98,10 @@
         &-hotel {
             margin-bottom: 178px;
 
-            // @include tablet {
-            //     margin-bottom: 226px;
-            // }
             @media screen and (min-width: 1024px) {
                 margin-bottom: 226px;
             }
 
-            // @include desktop {
-            //     margin-bottom: 249px;
-            // }
             @media screen and (min-width: 1280px) {
                 margin-bottom: 249px;
             }
@@ -162,7 +114,6 @@
 
         font-family: 'Times New Roman',
             'sans-serif';
-        // @include font(32px, 1.16, 700, 0.05em);
         font-size: 32px;
         line-height: 1.16;
         font-weight: 700;
@@ -170,10 +121,6 @@
         color: #ffffff;
         text-transform: uppercase;
 
-        // @include tablet {
-        //     margin-bottom: 145px;
-        //     @include font(36px, 1.14, null, null);
-        // }
         @media screen and (min-width: 1024px) {
             margin-bottom: 145px;
             font-size: 36px;
@@ -203,13 +150,6 @@
 
     }
 
-    // @include tablet {
-    //     .hero__button-wrap {
-    //         display: flex;
-    //         justify-content: flex-end;
-    //         gap: 40px;
-    //     }
-    // }
     &__address {
         position: absolute;
         bottom: 527px;
@@ -223,13 +163,6 @@
         border: 1px solid rgba(243, 198, 83, 0.7);
         border-radius: 2px;
 
-        // @include tablet {
-        //     top: 412px;
-        //     left: 47px;
-
-        //     width: 285px;
-        //     height: 56px;
-        // }
         @media screen and (min-width: 1024px) {
             top: 412px;
             left: 47px;
@@ -238,10 +171,6 @@
             height: 56px;
         }
 
-        // @include desktop {
-        //     top: 436px;
-        //     left: 85px;
-        // }
         @media screen and (min-width: 1280px) {
             top: 436px;
             left: 85px;
@@ -252,15 +181,11 @@
             align-items: center;
             text-align: start;
             font-family: 'Montserrat', 'sans-serif';
-            // @include font(12px, 1.25, null, 0.01em);
             font-size: 12px;
             line-height: 1.25;
             letter-spacing: 0.01em;
             color: #e5e5e5;
 
-            // @include tablet {
-            //     font-size: 16px;
-            // }
             @media screen and (min-width: 1024px) {
                 font-size: 16px;
             }
@@ -271,9 +196,6 @@
             margin-right: 10px;
             fill: #f3c653;
 
-            // @include tablet {
-            //     display: none;
-            // }
             @media screen and (min-width: 1024px) {
                 display: none;
             }
@@ -299,25 +221,17 @@
                 display: none;
             }
         }
-
     }
 
     &__soc-wrap {
         position: absolute;
         top: 515px;
 
-        // @include tablet {
-        //     top: 493px;
-        //     left: 47px;
-        // }
         @media screen and (min-width: 1024px) {
             top: 493px;
             left: 47px;
         }
 
-        // @include desktop {
-        //     display: none;
-        // }
         @media screen and (min-width: 1280px) {
             display: none;
         }
@@ -354,17 +268,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 414px;
 
     &__main {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
             url('../images/main-page/bg/main-hero-mobile-@1x.jpg');
 
-        // @include retina2x {
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/main-hero-mobile-@2x.jpg');
-        // }
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -374,20 +283,6 @@
                 url('../images/main-page/bg/main-hero-mobile-@2x.jpg');
         }
 
-        // @include tablet {
-        //     max-width: 1024px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/bg-main-1-tab.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/main-page/bg/bg-main-1-tab_2x.jpg');
-        //     }
-        // }
         @media screen and (min-width: 1024px) {
             max-width: 1024px;
             background-image: linear-gradient(to right,
@@ -405,20 +300,6 @@
             }
         }
 
-        // @include desktop {
-        //     max-width: 1280px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/bg-main-1-dt.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/main-page/bg/bg-main-1-dt_2x.jpg');
-        //     }
-        // }
         @media screen and (min-width: 1280px) {
             max-width: 1280px;
             background-image: linear-gradient(to right,
@@ -437,56 +318,10 @@
         }
     }
 
-
     &__restaurant {
-        // background-image: linear-gradient(to right, $color-gradient, $color-gradient),
-        //     url('../images/restaurant-page/bg/bg-rest-1-mob.jpg');
-
-        // @include retina2x {
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/restaurant-page/bg/bg-rest-1-mob_2x.jpg');
-        // }
-
-        // @include tablet {
-        //     max-width: 1024px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/restaurant-page/bg/bg-rest-1-tab.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/restaurant-page/bg/bg-rest-1-tab_2x.jpg');
-        //     }
-        // }
-
-        // @include desktop {
-        //     max-width: 1280px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/restaurant-page/bg/bg-rest-1-dt.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/restaurant-page/bg/bg-rest-1-dt_2x.jpg');
-        //     }
-        // }
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
             url('../images/restaurant-page/bg/restaurant-hero-mobile-@1x.jpg');
 
-        // @include retina2x {
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/main-hero-mobile-@2x.jpg');
-        // }
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -496,20 +331,6 @@
                 url('../images/restaurant-page/bg/restaurant-hero-mobile-@2x.jpg');
         }
 
-        // @include tablet {
-        //     max-width: 1024px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/bg-main-1-tab.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/main-page/bg/bg-main-1-tab_2x.jpg');
-        //     }
-        // }
         @media screen and (min-width: 1024px) {
             max-width: 1024px;
             background-image: linear-gradient(to right,
@@ -527,20 +348,6 @@
             }
         }
 
-        // @include desktop {
-        //     max-width: 1280px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/bg-main-1-dt.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/main-page/bg/bg-main-1-dt_2x.jpg');
-        //     }
-        // }
         @media screen and (min-width: 1280px) {
             max-width: 1280px;
             background-image: linear-gradient(to right,
@@ -560,55 +367,9 @@
     }
 
     &__hotel {
-        //     background-image: linear-gradient(to right, $color-gradient, $color-gradient),
-        //         url('../images/hotel-page/bg/bg-hotel-mob.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/hotel-page/bg/bg-hotel-mob_2x.jpg');
-        //     }
-
-        //     @include tablet {
-        //         max-width: 1024px;
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/hotel-page/bg/bg-hotel-tab.jpg');
-
-        //         @include retina2x {
-        //             background-image: linear-gradient(to right,
-        //                     $color-gradient,
-        //                     $color-gradient ),
-        //                 url('../images/hotel-page/bg/bg-hotel-tab_2x.jpg');
-        //         }
-        //     }
-
-        //     @include desktop {
-        //         max-width: 1280px;
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/hotel-page/bg/bg-hotel-dt.jpg');
-
-        //         @include retina2x {
-        //             background-image: linear-gradient(to right,
-        //                     $color-gradient,
-        //                     $color-gradient ),
-        //                 url('../images/hotel-page/bg/bg-hotel-dt_2x.jpg');
-        //         }
-        //     }
-        // }
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
             url('../images/hotel-page/bg/hotel-hero-mobile-@1x.jpg');
 
-        // @include retina2x {
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/main-hero-mobile-@2x.jpg');
-        // }
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -618,20 +379,6 @@
                 url('../images/hotel-page/bg/hotel-hero-mobile-@2x.jpg');
         }
 
-        // @include tablet {
-        //     max-width: 1024px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/bg-main-1-tab.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/main-page/bg/bg-main-1-tab_2x.jpg');
-        //     }
-        // }
         @media screen and (min-width: 1024px) {
             max-width: 1024px;
             background-image: linear-gradient(to right,
@@ -649,20 +396,6 @@
             }
         }
 
-        // @include desktop {
-        //     max-width: 1280px;
-        //     background-image: linear-gradient(to right,
-        //             $color-gradient,
-        //             $color-gradient ),
-        //         url('../images/main-page/bg/bg-main-1-dt.jpg');
-
-        //     @include retina2x {
-        //         background-image: linear-gradient(to right,
-        //                 $color-gradient,
-        //                 $color-gradient ),
-        //             url('../images/main-page/bg/bg-main-1-dt_2x.jpg');
-        //     }
-        // }
         @media screen and (min-width: 1280px) {
             max-width: 1280px;
             background-image: linear-gradient(to right,
@@ -681,229 +414,3 @@
         }
     }
 }
-
-// .hero__container {
-//     position: relative;
-// }
-
-// .hero__title {
-//     // width: 303px;
-//     margin: 0 auto;
-//     margin-bottom: 24px;
-
-//     font-family: 'Film P3', 'sans-serif';
-//     // @include font(96px, 1.07, 700, 0.3em);
-
-//     font-size: 92px;
-//     line-height: 1.07;
-//     font-weight: 700;
-//     letter-spacing: 0.3em;
-//     color: #ffffff;
-//     text-transform: uppercase;
-
-//     // @include tablet {
-//     //     width: 404px;
-//     //     margin-bottom: 16px;
-//     //     font-size: 128px;
-//     //     line-height: 1.08;
-//     // }
-//     @media screen and (min-width: 1024px) {
-//         width: 404px;
-//         margin-bottom: 16px;
-//         font-size: 128px;
-//         line-height: 1.08;
-//     }
-
-//     // @include desktop {
-//     //     margin-bottom: 32px;
-//     // }
-//     @media screen and (min-width: 1280px) {
-//         margin-bottom: 32px;
-//     }
-// }
-
-// .hero__title-restaurant {
-//     margin-bottom: 20px;
-
-//     @include tablet {
-//         margin-bottom: 16px;
-//     }
-
-//     @include desktop {
-//         margin-bottom: 32px;
-//     }
-// }
-
-// .hero__title-hotel {
-//     margin-bottom: 32px;
-// }
-
-// .hero__subtitle {
-//     width: 294px;
-//     margin: 0 auto;
-//     margin-bottom: 40px;
-
-//     font-family: $montserrat-font;
-//     @include font(16px, 1.25, 600, 0.02em);
-//     color: $color-title-light;
-
-//     @include tablet {
-//         width: 368px;
-//         margin-bottom: 56px;
-//         @include font(20px, 1.2, null, null);
-//     }
-
-//     @include desktop {
-//         margin-bottom: 64px;
-//     }
-// }
-
-// .hero__subtitle-restaurant {
-//     margin-bottom: 44px;
-
-//     @include tablet {
-//         margin-bottom: 56px;
-//     }
-
-//     @include desktop {
-//         margin-bottom: 64px;
-//     }
-// }
-
-// .hero__subtitle-hotel {
-//     margin-bottom: 178px;
-
-//     @include tablet {
-//         margin-bottom: 226px;
-//     }
-
-//     @include desktop {
-//         margin-bottom: 249px;
-//     }
-// }
-
-// .hero__text {
-//     margin: 0 auto;
-//     margin-bottom: 113px;
-
-//     font-family: $times-font;
-//     @include font(32px, 1.16, 700, 0.05em);
-//     color: $color-title-light;
-//     text-transform: uppercase;
-
-//     @include tablet {
-//         margin-bottom: 145px;
-//         @include font(36px, 1.14, null, null);
-//     }
-// }
-
-// @media screen and (max-width: 1023px) {
-//     .hero__button {
-//         margin: 0 auto;
-//     }
-
-//     .hero__button-mobile-margin {
-//         margin-bottom: 24px;
-//     }
-// }
-
-// @include tablet {
-//     .hero__button-wrap {
-//         display: flex;
-//         justify-content: flex-end;
-//         gap: 40px;
-//     }
-// }
-
-// .hero__address {
-//     position: absolute;
-//     bottom: 527px;
-//     right: 15px;
-
-//     display: flex;
-//     align-items: center;
-
-//     width: 210px;
-//     height: 47px;
-//     border: 1px solid rgba(243, 198, 83, 0.7);
-//     border-radius: 2px;
-
-//     @include tablet {
-//         top: 412px;
-//         left: 47px;
-
-//         width: 285px;
-//         height: 56px;
-//     }
-
-//     @include desktop {
-//         top: 436px;
-//         left: 85px;
-//     }
-// }
-
-// .hero__address-link {
-//     display: flex;
-//     align-items: center;
-//     text-align: start;
-//     font-family: $montserrat-font;
-//     @include font(12px, 1.25, null, 0.01em);
-//     color: $color-text-address;
-
-//     @include tablet {
-//         font-size: 16px;
-//     }
-// }
-
-// .hero__address-icon-mobile {
-//     margin-left: 6px;
-//     margin-right: 10px;
-//     fill: $color-text-links;
-
-//     @include tablet {
-//         display: none;
-//     }
-// }
-
-// .hero__address-icon-tablet {
-//     margin-left: 6px;
-//     margin-right: 10px;
-//     fill: $color-text-links;
-
-//     @media screen and (min-width: 320px) and (max-width: 1023px) {
-//         display: none;
-//     }
-// }
-
-// .hero__soc-wrap {
-//     position: absolute;
-//     top: 515px;
-
-//     @include tablet {
-//         top: 493px;
-//         left: 47px;
-//     }
-
-//     @include desktop {
-//         display: none;
-//     }
-// }
-
-// .hero__soc-list {
-//     display: flex;
-//     justify-content: center;
-//     gap: 20px;
-//     width: 112px;
-//     height: 24px;
-// }
-
-// .hero__soc-icon {
-//     fill: rgba(243, 198, 83, 0.7);
-//     transform: fill;
-//     @extend %transition;
-
-//     &:hover,
-//     &:focus {
-//         fill: $color-text-links;
-//     }
-// }
