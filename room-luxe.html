@@ -24,6 +24,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/main.min.css" />
     </head>
     <body>
@@ -296,6 +297,8 @@
                             />
                         </picture>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <div class="room__info">
                     <h1 class="room__title">
@@ -347,33 +350,21 @@
                 </div>
                 <button class="btn room__btn" data-modal-open-price-lux>Переглянути ціни</button>
             </section>
-            <!-- About our restaurant -->
-            <section></section>
-            <!-- Details of our restaurant -->
-            <section></section>
-            <!-- About our hotel -->
-            <section></section>
-            <!-- Details of our hotel -->
-            <section></section>
-            <!-- Contacts -->
-            <section></section>
         </main>
         <!-- Footer -->
         <footer></footer>
 
-        <!-- Підключення бібліотек -->
-        <!-- Підключаю JQuery (бібліотека слайду) -->
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <!-- Підключаємо СЛАЙДЕР SLICK -->
-        <script
-            type="text/javascript"
-            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-        ></script>
-        <!-- Підключаємо НАШ JS з НАЛАШТУВАННЯМ СЛАЙДЕРА -->
-        <script src="./js/slider-main-detailes.js" type="module"></script>
-        <script src="./js/slick-about.js" type="module"></script>
-        <script src="./js/modal-table.js" type="module"></script>
-        <script src="./js/modal-room.js" type="module"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
     </body>
 </html>
