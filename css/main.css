@@ -941,6 +941,19 @@ button {
           align-items: center;
 }
 .room__soc-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  -webkit-transform: fill;
+          transform: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform transition-duration transition-timing-function;
+  transition: -webkit-transform transition-duration transition-timing-function;
+  transition: transform transition-duration transition-timing-function;
+  transition: transform transition-duration transition-timing-function, -webkit-transform transition-duration transition-timing-function;
+}
+.room__soc-icon:hover, .room__soc-icon:focus {
   fill: #f3c653;
 }
 @media screen and (min-width: 414px) {

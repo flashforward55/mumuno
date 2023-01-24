@@ -152,7 +152,18 @@
     }
 
     &__soc-icon {
-        fill: #f3c653;
+        fill: rgba(243, 198, 83, 0.7);
+
+
+        transform: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform transition-duration transition-timing-function;
+
+        &:hover,
+        &:focus {
+            fill: #f3c653;
+        }
     }
 
     &__address {
