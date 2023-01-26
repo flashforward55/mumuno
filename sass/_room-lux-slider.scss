@@ -165,8 +165,20 @@
     }
 
     &__address {
-        @media screen and (min-width: 414px) {
-            display: none;
+        @media screen and (min-width: 414px) and (max-width: 1023px) {
+            cursor: pointer;
+            width: 210px;
+            height: 47px;
+            border: 1px solid rgba(243, 198, 83, 0.7);
+            border-radius: 2px;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 628px;
+            left: 175px;
+
+
+
         }
 
         @media screen and (min-width: 1024px) {
@@ -190,12 +202,29 @@
     &__address-icon {
         margin-right: 10px;
         fill: #f3c653;
+
+        @media screen and (min-width: 414px) and (max-width: 1023px) {
+            margin-left: 6px;
+            margin-right: 8px;
+        }
+
     }
 
     &__address-link {
         font-family: 'Montserrat';
         color: #e5e5e5;
         font-size: 16px;
+
+        @media screen and (min-width: 414px) and (max-width: 1023px) {
+            text-align: start;
+            letter-spacing: .01em;
+            align-items: center;
+            font-family: Montserrat, "sans-serif";
+            font-size: 12px;
+            line-height: 1.25;
+            display: flex;
+
+        }
     }
 
     &__contact {
@@ -228,7 +257,6 @@
         }
 
         @media screen and (min-width: 1024px) {
-            position: absolute;
             right: 47px;
             top: 608px;
         }

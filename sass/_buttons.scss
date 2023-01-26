@@ -1,53 +1,6 @@
-.btn {
-    min-width: 236px;
-    height: 48px;
-
-    font-style: normal;
-    // @include font(16px, 1.25, 700, 0.02em);
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-
-    color: #f3c653;
-
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transition-property, transition-duration, transition-timing-function;
-
-    &:hover,
-    &:focus {
-        background-color: #ffffff;
-    }
-}
-
-// Додаткові стилі для чорних кнопок (для чорних кнопок використовувати класи btn i dark-btn разом)
-// .dark-btn {
-//     background-color: $backrground-btn-dark;
-//     border: 2px solid $border-dark-color;
-
-//     transition-property: background-color, border-color;
-//     @extend %transition;
-
-//     &:hover,
-//     &:focus {
-//         background-color: $backrground-hover-light;
-//         border-color: $accent-color;
-//     }
-// }
-
-// Посилання у вигляді кнопок
-// Посилання у вигляді чорної кнопки з написом "Детальніше" (використовувати клас link-btn разом з класом link)
-// .link-btn {
-//     display: block;
-//     max-width: 236px;
+// .btn {
+//     min-width: 236px;
 //     height: 48px;
-//     padding: 14px 65px;
 
 //     font-style: normal;
 //     // @include font(16px, 1.25, 700, 0.02em);
@@ -57,12 +10,12 @@
 //     letter-spacing: 0.02em;
 
 //     color: #f3c653;
-//     ;
-//     background-color: #000000;
-//     border: 2px solid #fffdee;
+
+//     background-color: rgba(0, 0, 0, 0.4);
+//     border: 2px solid #ffffff;
 //     border-radius: 25px;
 
-//     transition-property: background-color, border-color;
+//     transition-property: background-color;
 //     transition-duration: 250ms;
 //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 //     transition: transition-property, transition-duration, transition-timing-function;
@@ -70,79 +23,162 @@
 //     &:hover,
 //     &:focus {
 //         background-color: #ffffff;
-//         border-color: #f3c653;
 //     }
 // }
 
-// Посилання у вигляді прозорої кнопки з написом "Переглянути меню" (використовувати клас link-btn разом з класом link)
-.link-light-btn {
+// // Додаткові стилі для чорних кнопок (для чорних кнопок використовувати класи btn i dark-btn разом)
+// // .dark-btn {
+// //     background-color: $backrground-btn-dark;
+// //     border: 2px solid $border-dark-color;
 
-    padding: 12px 30px;
+// //     transition-property: background-color, border-color;
+// //     @extend %transition;
 
-    font-style: normal;
-    // @include font(16px, 1.25, 700, 0.02em);
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+// //     &:hover,
+// //     &:focus {
+// //         background-color: $backrground-hover-light;
+// //         border-color: $accent-color;
+// //     }
+// // }
 
-    color: #f3c653;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid #ffffff;
-    border-radius: 25px;
+// // Посилання у вигляді кнопок
+// // Посилання у вигляді чорної кнопки з написом "Детальніше" (використовувати клас link-btn разом з класом link)
+// // .link-btn {
+// //     display: block;
+// //     max-width: 236px;
+// //     height: 48px;
+// //     padding: 14px 65px;
 
-    transition-property: background-color;
+// //     font-style: normal;
+// //     // @include font(16px, 1.25, 700, 0.02em);
+// //     font-size: 16px;
+// //     line-height: 1.25;
+// //     font-weight: 700;
+// //     letter-spacing: 0.02em;
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transition-property, transition-duration, transition-timing-function;
+// //     color: #f3c653;
+// //     ;
+// //     background-color: #000000;
+// //     border: 2px solid #fffdee;
+// //     border-radius: 25px;
 
-    &:hover,
-    &:focus {
-        background-color: #ffffff;
-    }
-}
+// //     transition-property: background-color, border-color;
+// //     transition-duration: 250ms;
+// //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// //     transition: transition-property, transition-duration, transition-timing-function;
 
-// Великі кнопки
-// Загальні стилі для великих кнопок
-// .big-btn {
-//     width: 100%;
-//     height: 64px;
+// //     &:hover,
+// //     &:focus {
+// //         background-color: #ffffff;
+// //         border-color: #f3c653;
+// //     }
+// // }
+
+// // Посилання у вигляді прозорої кнопки з написом "Переглянути меню" (використовувати клас link-btn разом з класом link)
+// .link-light-btn {
+
+//     padding: 12px 30px;
 
 //     font-style: normal;
-//     @include font(16px, 1.22, 500, null);
-//     text-transform: uppercase;
+//     // @include font(16px, 1.25, 700, 0.02em);
+//     font-size: 16px;
+//     line-height: 1.25;
+//     font-weight: 700;
+//     letter-spacing: 0.02em;
 
-//     color: $big-btn-text-color;
-//     background-color: $backrground-btn-dark;
-
-//     border: 1px solid $accent-color;
+//     color: #f3c653;
+//     background-color: rgba(0, 0, 0, 0.4);
+//     border: 2px solid #ffffff;
 //     border-radius: 25px;
 
-//     transition-property: color, background-color;
-//     @extend %transition;
+//     transition-property: background-color;
 
-//     @include mobile {
-//         @include font(20px, 1.2, null, null);
-//     }
-
-//     @include tablet {
-//         min-width: 434px;
-//         @include font(24px, 1.2, null, null);
-//     }
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition: transition-property, transition-duration, transition-timing-function;
 
 //     &:hover,
 //     &:focus {
-//         color: $big-btn-hover-color;
-//         background-color: $accent-color;
+//         background-color: #ffffff;
 //     }
 // }
 
-// Додаткові стилі для кнопок в модалках (в модадках використовувати класи big-btn i submit разом)
-// .submit {
-//     border-radius: 2px;
+// // Великі кнопки
+// // Загальні стилі для великих кнопок
+// // .big-btn {
+// //     width: 100%;
+// //     height: 64px;
 
-//     @include tablet {
-//         min-width: 592px;
-//     }
-// }
+// //     font-style: normal;
+// //     @include font(16px, 1.22, 500, null);
+// //     text-transform: uppercase;
+
+// //     color: $big-btn-text-color;
+// //     background-color: $backrground-btn-dark;
+
+// //     border: 1px solid $accent-color;
+// //     border-radius: 25px;
+
+// //     transition-property: color, background-color;
+// //     @extend %transition;
+
+// //     @include mobile {
+// //         @include font(20px, 1.2, null, null);
+// //     }
+
+// //     @include tablet {
+// //         min-width: 434px;
+// //         @include font(24px, 1.2, null, null);
+// //     }
+
+// //     &:hover,
+// //     &:focus {
+// //         color: $big-btn-hover-color;
+// //         background-color: $accent-color;
+// //     }
+// // }
+
+// // Додаткові стилі для кнопок в модалках (в модадках використовувати класи big-btn i submit разом)
+// // .submit {
+// //     border-radius: 2px;
+
+// //     @include tablet {
+// //         min-width: 592px;
+// //     }
+// // }
+
+.btn {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+.btn-modal-open {
+    width: 236px;
+    height: 48px;
+
+    border: 2px solid $white-color;
+    border-radius: 25px;
+    background-color: $black-color;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: $accent-yellow-color;
+
+    @include transition(background-color, border-color);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-yellow-color;
+        background-color: $white-color;
+    }
+}
+
+.btn-modal-open--transparent {
+    background-color: $bg-btn-transparent;
+}

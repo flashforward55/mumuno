@@ -124,56 +124,39 @@ button {
 }
 
 .btn {
-  min-width: 236px;
-  height: 48px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: -webkit-transition-property, -webkit-transition-duration, -webkit-transition-timing-function;
-  transition: -webkit-transition-property, -webkit-transition-duration, -webkit-transition-timing-function;
-  transition: transition-property, transition-duration, transition-timing-function;
-  transition: transition-property, transition-duration, transition-timing-function, -webkit-transition-property, -webkit-transition-duration, -webkit-transition-timing-function;
-}
-.btn:hover, .btn:focus {
-  background-color: #ffffff;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: transparent;
 }
 
-.link-light-btn {
-  padding: 12px 30px;
-  font-style: normal;
+.btn-modal-open {
+  width: 236px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 700;
   letter-spacing: 0.02em;
-  color: #f3c653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
+  color: #F3C653;
+  -webkit-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: -webkit-transition-property, -webkit-transition-duration, -webkit-transition-timing-function;
-  transition: -webkit-transition-property, -webkit-transition-duration, -webkit-transition-timing-function;
-  transition: transition-property, transition-duration, transition-timing-function;
-  transition: transition-property, transition-duration, transition-timing-function, -webkit-transition-property, -webkit-transition-duration, -webkit-transition-timing-function;
 }
-.link-light-btn:hover, .link-light-btn:focus {
-  background-color: #ffffff;
+.btn-modal-open:hover, .btn-modal-open:focus {
+  border-color: #F3C653;
+  background-color: #FFFFFF;
+}
+
+.btn-modal-open--transparent {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header {
@@ -956,9 +939,22 @@ button {
 .room__soc-icon:hover, .room__soc-icon:focus {
   fill: #f3c653;
 }
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 414px) and (max-width: 1023px) {
   .room__address {
-    display: none;
+    cursor: pointer;
+    width: 210px;
+    height: 47px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 628px;
+    left: 175px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -988,10 +984,31 @@ button {
   margin-right: 10px;
   fill: #f3c653;
 }
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  .room__address-icon {
+    margin-left: 6px;
+    margin-right: 8px;
+  }
+}
 .room__address-link {
   font-family: "Montserrat";
   color: #e5e5e5;
   font-size: 16px;
+}
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  .room__address-link {
+    text-align: start;
+    letter-spacing: 0.01em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Montserrat, "sans-serif";
+    font-size: 12px;
+    line-height: 1.25;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .room__contact {
   display: -webkit-box;
@@ -1022,7 +1039,6 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .room__btn {
-    position: absolute;
     right: 47px;
     top: 608px;
   }
