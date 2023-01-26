@@ -230,12 +230,12 @@
         @media screen and (min-width: 1024px) {
             position: absolute;
             right: 47px;
-            top: 510px;
+            top: 608px;
         }
 
         @media screen and (min-width: 1280px) {
             right: 85px;
-            top: 606px;
+            top: 608px;
         }
     }
 }
@@ -331,3 +331,64 @@
     }
 
 }
+
+// .btn {
+//     padding: 0;
+//     border: none;
+//     cursor: pointer;
+//     font-family: inherit;
+//     background-color: transparent;
+// }
+
+// .btn-modal-open {
+//     width: 236px;
+//     height: 48px;
+
+//     border: 2px solid $white-color;
+//     border-radius: 25px;
+//     background-color: $black-color;
+
+//     font-family: 'Montserrat';
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: calc(20 / 16);
+//     letter-spacing: 0.02em;
+//     color: $accent-yellow-color;
+
+//     @include transition(background-color, border-color);
+
+//     &:hover,
+//     &:focus {
+//         border-color: $accent-yellow-color;
+//         background-color: $white-color;
+//     }
+// }
+
+// .btn-roompage-modal-open {
+//     width: 434px;
+//     height: 64px;
+
+//     border: 1px solid $accent-yellow-color;
+//     border-radius: 25px;
+//     background-color: $black-color;
+
+//     font-family: 'Montserrat';
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: calc(29 / 24);
+//     text-transform: uppercase;
+//     color: $white-color;
+
+//     @include transition(background-color, color);
+
+//     &:hover,
+//     &:focus {
+//         color: $black-color;
+//         background-color: $accent-yellow-color;
+//     }
+
+//     // mobile
+//     @media screen and (max-width: 1023.99px) {
+//         width: 384px;
+//     }
+// }

@@ -1024,13 +1024,13 @@ button {
   .room__btn {
     position: absolute;
     right: 47px;
-    top: 510px;
+    top: 608px;
   }
 }
 @media screen and (min-width: 1280px) {
   .room__btn {
     right: 85px;
-    top: 606px;
+    top: 608px;
   }
 }
 
