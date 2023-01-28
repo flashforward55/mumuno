@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про наш ресторан</title>
+    <!-- Подключение шрифтов -->
+    <!-- Подключение фавиконки -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!--<link rel="stylesheet" href="./css/swiper-bundle.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <main>
+        <section class="restaurant-description">
+            <div class="restaurant-description__container">
+                <h2 class="visually-hidden">Про наш ресторан</h2>
+                <h3 class="restaurant-description__title">Amet minim mollit non</h3>
+                <a class="logo restaurant-description__logo link" href="#">Mimino</a>
+                <ul class="list restaurant-description__list">
+                    <li class="restaurant-description__item">
+                        <div class="restaurant-description__control restaurant-description__control--wood">
+                            <p class="restaurant-description__meta restaurant-description__meta--grey">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                officia consequat duis enim
+                                velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <img class="restaurant-description__image restaurant-description__image--wood"
+                                src="./images/about-restaurant/wood-interior-desktop-@1x.jpg"
+                                srcset="./images/about-restaurant/wood-interior-desktop-@1x.jpg 1x, ./images/about-restaurant/wood-interior-desktop-@2x.jpg 2x"
+                                alt="Зала ресторану з інтер'єром у дерев'яному стилі">
+                        </div>
+                    </li>
+                    <li class="restaurant-description__item">
+                        <div class="restaurant-description__control restaurant-description__control--chess">
+                            <img class="restaurant-description__image restaurant-description__image--chess"
+                                src="./images/about-restaurant/chess-interior-desktop-@1x.jpg"
+                                srcset="./images/about-restaurant/chess-interior-desktop-@1x.jpg 1x, ./images/about-restaurant/wood-interior-desktop-@2x.jpg 2x"
+                                alt="Зала ресторану з французькими вікнами">
+                            <p class="restaurant-description__meta restaurant-description__meta--color">Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Velit officia consequat duis enimvelit
+                                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+
+                
+                
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script srs="./js/slider-con.js"></script>
+    <!--<script srs="./js/vendors/swiper-bundle.min.js" ></script>-->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

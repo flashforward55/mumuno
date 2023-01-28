@@ -1,0 +1,107 @@
+
+
+.restaurant-description__container {
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-top: 120px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+    width: 414px;
+    /*position: relative;*/
+
+    @media screen and (min-width: $mobile) {
+        width: 414px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 1024px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1280px;
+    }
+}
+
+.restaurant-description__title {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.156;
+    color: $color-subtitle;
+
+    margin-bottom: 4px;
+}
+
+.restaurant-description__logo {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.078;
+    letter-spacing: 0.3em;
+    color: $color-logo-dark;
+
+    margin-bottom: 24px;
+}
+
+.restaurant-description__list {
+    display: block;
+}
+
+.restaurant-description__control {
+    display: flex;
+
+&--wood {
+    gap: 26px;
+}
+
+&--chess {
+    align-items: center;
+    gap: 48px;
+
+    transform: translateY(-355px);
+}
+}
+
+.restaurant-description__image {
+    width: 460px;
+
+    background: $img-background-color;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+
+&--wood {
+    transform: translateY(-287px);
+}
+}
+
+.restaurant-description__meta {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    
+    max-width: 518px;
+
+&--grey {
+    color: $gray-text-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+&--color {
+    color: $brown-color;
+
+    max-width: 312px;
+}
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
